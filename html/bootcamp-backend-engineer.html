@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Developer Bootcamp</title>
+    <link rel="stylesheet" href="../css/bootcamp-backend-engineer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar" id="navBar">
+      <div class="navbar-container">
+        <div class="menu-bar">
+          <a href="#"><img class="logo" src="../img/logo-gta.png" alt="" /></a>
+          <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="programgta">
+              <button onclick="dropDown()">Program <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                  <li> 
+                    <a href="bootcamp.html"><i class="fa-solid fa-window-maximize"></i> Bootcamp</a>
+                  </li>
+                  <li> 
+                    <a href="serti.html"><i class="fa-solid fa-window-maximize"></i> Sertifikasi</a>
+                  </li>
+                  <li>
+                    <a href="reguler.html"><i class="fa-solid fa-window-maximize"></i> Kelas Reguler</a>
+                  </li>
+                  <li>
+                    <a href="magang.html"><i class="fa-solid fa-window-maximize"></i> Pemagangan</a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gal"><a href="galeri.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-extra">
+          <a id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- wa -->
+      <a href="https://wa.me/6281228430523" class="floating" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-img">
+          <img src="../img/bt--detailimg.png" alt="" />
+        </div>
+        <div class="hero-text">
+          <h3>Bootcamp</h3>
+          <h1>Bootcamp <span>Backend</span> Engineer</h1>
+          <p>
+            Bergabunglah dengan Bootcamp kami dan pelajari
+            keterampilan penting untuk membangun dan mengelola sistem backend
+            yang efisien.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- content -->
+    <section class="content">
+      <div class="content-container">
+        <div class="content-detail tab-content" id="detail">
+          <!-- materi -->
+          <div class="detail-materi">
+            <h5>Kurikulum GTA Bootcamp</h5>
+            <h4>Materi Yang Akan Kamu Pelajari di Bootcamp Backend Engineer</h4>
+            <p>
+              Kurikulum ini dirancang khusus agar kamu bisa menguasai materi
+              dari dasar sampai implementasinya di pekerjaan
+            </p>
+          </div>
+          <div class="faq-box">
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide1('myModal1')">
+                <p>
+                  <i class="fa-solid fa-book"></i>Memahami dasar back-end
+                  programming dan dasar JavaScript
+                </p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal1">
+                <ul>
+                  <li>Web Development Intro</li>
+                  <li>BE Developer</li>
+                  <li>Tools Back End Developer</li>
+                  <li>Code structure</li>
+                  <li>Variables (let, const, var)</li>
+                  <li>Operators</li>
+                  <li>Logical operators</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card" id="overlay">
+              <div class="faq-tanya" onclick="ShowHide2('myModal2')">
+                <p>
+                  <i class="fa-solid fa-book"></i>Memahami logika pemrograman
+                  dengan menggunakan Javascript
+                </p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal2">
+                <ul>
+                  <li>Algoritma</li>
+                  <li>Flowchart</li>
+                  <li>Pseudocode dan Alur Pengambilan Keputusan</li>
+                  <li>Loop</li>
+                  <li>Sorting Algorithm</li>
+                  <li>Logika search</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide3('myModal3')">
+                <p>
+                  <i class="fa-solid fa-book"></i>Mengaplikasikan Function dan
+                  Object Oriented Programming (OOP) di JavaScript
+                </p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal3">
+                <ul>
+                  <li>Function</li>
+                  <li>Asynchronous Process</li>
+                  <li>Class, Object, & Method</li>
+                  <li>OOP Introduction</li>
+                  <li>Pilar OOP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide4('myModal4')">
+                <p>
+                  <i class="fa-solid fa-book"></i>Back End Web Development
+                  Basics
+                </p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal4">
+                <ul>
+                  <li>Kerja Sama HTML dan CSS</li>
+                  <li>Debugging HTML & CSS</li>
+                  <li>Runtime Environment</li>
+                  <li>Package Manager dalam Node.js</li>
+                  <li>Module dalam Node.js</li>
+                  <li>Fs Module dalam Node.js</li>
+                  <li>Inisialisasi Project Node.js</li>
+                  <li>HTTP Server</li>
+                  <li>Metode HTTP</li>
+                  <li>Express.js</li>
+                  <li>Routing</li>
+                  <li>Middleware</li>
+                  <li>View Engine</li>
+                  <li>JSON</li>
+                  <li>RESTful API</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide5('myModal5')">
+                <p><i class="fa-solid fa-book"></i>Database & ORM</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal5">
+                <ul>
+                  <li>Konsep Database & DBMS</li>
+                  <li>Query Language dan Implementasi DBMS & RDBMS</li>
+                  <li>ORM (Object Relational Mapping)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide6('myModal6')">
+                <p>
+                  <i class="fa-solid fa-book"></i>Network & Application
+                  Development
+                </p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal6">
+                <ul>
+                  <li>Networking</li>
+                  <li>API Documentation & Scrum</li>
+                  <li>Design Pattern</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide7('myModal7')">
+                <p>
+                  <i class="fa-solid fa-book"></i>Authentication & Media
+                  Handling
+                </p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal7">
+                <ul>
+                  <li>Authentication & Authorization</li>
+                  <li>Debugging and Logging</li>
+                  <li>Back End Media Handling</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide8('myModal8')">
+                <p><i class="fa-solid fa-book"></i>Testing & Deployment</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal8">
+                <ul>
+                  <li>Testing</li>
+                  <li>Cloud, Server, & CI/CD</li>
+                  <li>Containerization</li>
+                </ul>
+              </div>
+            </div>
+            <div class="faq-card">
+              <div class="faq-tanya" onclick="ShowHide9('myModal9')">
+                <p><i class="fa-solid fa-book"></i>WebSocket & Mailer</p>
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="faq-jawab" id="myModal9">
+                <ul>
+                  <li>WebSocket</li>
+                  <li>Mailer</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- kemampuan -->
+          <div class="mampu">
+            <div class="mampu-judul">
+              <h5>Kemampuan Teknis</h5>
+              <h4>Kemampuan Yang Akan Kamu Kuasai</h4>
+              <p>
+                Kamu akan dibimbing hingga menguasai ilmu Back End Engineering
+                Bootcamp dari dasar sampai penerapannya dalam pekerjaan.
+              </p>
+            </div>
+            <div class="mampu-hard">
+              <div class="hard-judul">💻 Hard Skill</div>
+              <div class="hard-box">
+                <p>Menguasai Javascript sebagai bahasa pemrograman web</p>
+                <p>Mengolah data di backend dengan database PostgreeSQL</p>
+                <p>Membuat RestAPI dengan Node.JS</p>
+                <p>Melakukan API documentation</p>
+                <p>Melakukan testing dan deployment</p>
+                <p>Melakukan implementasi web socket dan mailer</p>
+                <p>Melakukan authentication pada fitur web</p>
+              </div>
+            </div>
+            <div class="mampu-hard">
+              <div class="hard-judul">⚙️ Soft Skill</div>
+              <div class="hard-box">
+                <p>Self-driven</p>
+                <p>Mengolah data di backend dengan database PostgreeSQL</p>
+                <p>Analytical Thinking</p>
+                <p>Critical Thinking</p>
+                <p>Teamwork</p>
+                <p>English Business Presentation Skill</p>
+                <p>English Business Writing Skill</p>
+                <p>English Business Negotiation Skill</p>
+              </div>
+            </div>
+          </div>
+          <!-- tools -->
+          <div class="tools">
+            <div class="tools-judul">🛠 Tools yang akan dipelajari</div>
+            <div class="tools-box">
+              <div class="tools-card">
+                <img src="../img/nodejs.png" alt="" />
+              </div>
+              <div class="tools-card">
+                <img src="../img/npm.png" alt="" />
+              </div>
+              <div class="tools-card">
+                <img src="../img/yarn.png" alt="" />
+              </div>
+              <div class="tools-card">
+                <img src="../img/postgre.png" alt="" />
+              </div>
+              <div class="tools-card">
+                <img src="../img/swagger.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- mentor -->
+          <div class="mentor">
+            <div class="mentor-judul">
+              <h5>Subject Matter Expert</h5>
+              <h3>Dibimbing Oleh Praktisi Berpengalaman di Bidangnya</h3>
+              <p>
+                Belajar langsung dari pengalaman milik fasilitator Gta yang
+                telah bekerja dan menjadi spesialis di startup unicorn dan
+                korporat.
+              </p>
+            </div>
+            <div class="mentor-box">
+              <div class="mentor-profil">
+                <div class="mentor-img">
+                  <img src="../img/men1.png" alt="" />
+                </div>
+                <div class="mentor-ident">
+                  <h4>Justin Martin</h4>
+                  <p>Mobile Developer <b>Shopee</b></p>
+                </div>
+              </div>
+              <div class="mentor-text">
+                <p>
+                  Justin Martin adalah seorang backend engineer dengan
+                  pengalaman 5 tahun. Justin memiliki track record yang terbukti
+                  dalam backend engineering, setelah memimpin integrasi layanan
+                  Logee dengan pelabuhan laut dan bea cukai di Indonesia. Made
+                  juga menciptakan layanan perdagangan yang kuat untuk Telkom
+                  Indonesia. Ia telah menggunakan Go, Javascript, Node.js,
+                  PostgreSQL, MongoDB, Redis, Kafka, dan Docker dalam berbagai
+                  proyek.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Setelah Lulus -->
+          <div class="after">
+            <div class="after-judul">
+              <h5>Career Development Program</h5>
+              <h4>Langsung Dibantu dan Disalurin Kerja Setelah Lulus</h4>
+              <p>
+                Gta membantu mempersiapkan keahlian student Bootcamp dari
+                mendaftar pekerjaan hingga menghubungkan langsung ke perusahaan.
+              </p>
+            </div>
+            <div class="after-box">
+              <div class="after-card">
+                <h4>🗂️ Dibimbing Bikin Portofolio</h4>
+                <p>
+                  Kamu akan dibantu mempersiapkan portfolio, CV, dan latihan
+                  interview bersama mentor lewat Career Development Program.
+                </p>
+              </div>
+              <div class="after-card">
+                <h4>🧰 Dicariin Perusahaan</h4>
+                <p>
+                  Melalui Binar Job Connect, kamu akan disalurkan ke perusahaan
+                  partner yang membutuhkan talenta digital lewat private
+                  interview atau hiring event.
+                </p>
+                <a href="#">Lihat Lowongan Software</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- button -->
+    <section class="button-container">
+      <button class="lihat" id="lihat" onclick="detail()">
+        Lihat Lebih Banyak
+      </button>
+    </section>
+    <!-- batch -->
+    <section class="batch">
+      <div class="batch-container">
+        <div class="batch-box">
+          <div class="batch-level">
+            <img
+              src="https://cdn.prod.website-files.com/62d785c9e7b9b749907a5233/65b9cd8aa9f75d30bb6e0f4a_Medals.svg"
+              loading="lazy"
+              alt=""
+              class="bdetail-detail-img-level"
+            />
+            <p>Level Beginner</p>
+          </div>
+          <div class="batch-judul">
+            <h3>Pendaftaran Backend Engineer Bootcamp</h3>
+          </div>
+          <div class="batch-on">
+            <div class="batch-tersedia">
+              <p>Batch yang tersedia</p>
+              <h5><i class="fa-solid fa-calendar"></i> Batch 12</h5>
+            </div>
+            <div class="batch-jadwal">
+              <div class="bulan">
+                <p><i class="fa-solid fa-calendar"></i> Mei 2025</p>
+              </div>
+              <div class="lama">
+                <p><i class="fa-solid fa-stopwatch"></i> 16 Minggu</p>
+              </div>
+              <div class="pertemuan">
+                <p>
+                  <i class="fa-solid fa-users-rectangle"></i> 3x
+                  Pertemuan/Minggu
+                </p>
+              </div>
+            </div>
+            <div class="batch-include">
+              <p><i class="fa-solid fa-circle-check"></i>Value for Money</p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Career Development
+                Program
+              </p>
+              <p><i class="fa-solid fa-circle-check"></i>Learning Ecosysytem</p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Technical Experience
+              </p>
+              <p>
+                <i class="fa-solid fa-circle-check"></i>Internship Opportunity
+              </p>
+              <p><i class="fa-solid fa-circle-check"></i>English For Working</p>
+            </div>
+            <div class="batch-harga">
+              <h5>Total Harga</h5>
+              <p>Rp1.850.000 <span>50%</span></p>
+            </div>
+            <div class="batch-button">
+              <div class="consul">
+                <a href="#">Konsultasi Dulu</a>
+              </div>
+              <div class="daftar">
+                <a href="daftar.html">Daftar</a>
+              </div>
+            </div>
+          </div>
+          <div class="batch-off">
+            <div class="off-box">
+              <div class="batch-maaf">
+                <div class="maaf-img">
+                  <img
+                    src="https://cdn.prod.website-files.com/62d785c9e7b9b749907a5233/660a34f90d2e1e2cd2c44585_Info.svg"
+                    loading="lazy"
+                    alt=""
+                    class="bdetail-detail-img-info"
+                  />
+                </div>
+                <div class="maaf-text">
+                  <p>
+                    Mohon maaf batch Back End Engineering Bootcamp saat ini
+                    belum dibuka. Sambil nunggu, kamu bisa ikuti bootcamp lain
+                    yang nggak kalah serunya!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="batch-off-button">
+              <a href="#">Lihat Bootcamp Lainnya</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Bootcamp lainnya -->
+    <div class="lain">
+      <div class="lain-container">
+        <div class="lain-judul">
+          <h3>Bootcamp <span>Lainnya</span></h3>
+        </div>
+        <div class="cls-content">
+          <div class="content-box">
+            <div class="content-card">
+              <div class="content-img">
+                <img src="../img/febt.png" alt="" />
+                <div class="text-judul">
+                  <h4>Frontend Engineer Bootcamp</h4>
+                </div>
+              </div>
+              <div class="text-isi">
+                <p>
+                  Belajar coding tampilan website dengan HTML CSS Javascript dan
+                  ReactJs.
+                </p>
+              </div>
+              <div class="text-info">
+                <p><span>Batch Terdekat</span><br />September 2024</p>
+                <a href="#">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="content-img">
+                <img src="../img/SABT.png" alt="" />
+                <div class="text-judul">
+                  <h4>System Analyst Bootcamp</h4>
+                </div>
+              </div>
+              <div class="text-isi">
+                <p>
+                  Belajar menganalisa kebutuhan konsumen untuk disesuaikan
+                  dengan sistem yang akan dibuat.
+                </p>
+              </div>
+              <div class="text-info">
+                <p><span>Batch Terdekat</span><br />Juni 2025</p>
+                <a href="#">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="content-img">
+                <img src="../img/dgbt.png" alt="" />
+                <div class="text-judul">
+                  <h4>Desain Grafis Bootcamp</h4>
+                </div>
+              </div>
+              <div class="text-isi">
+                <p>
+                  Mempelajari keterampilan desain grafis, seperti Fotografi,
+                  creative drawing, tipografi dll.
+                </p>
+              </div>
+              <div class="text-info">
+                <p><span>Batch Terdekat</span><br />Juni 2025</p>
+                <a href="#">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div class="content-card">
+              <div class="content-img">
+                <img src="../img/dmbt.png" alt="" />
+                <div class="text-judul">
+                  <h4>Digital Marketing Bootcamp</h4>
+                </div>
+              </div>
+              <div class="text-isi">
+                <p>
+                  Mempelajari cara memasarkan produk menggunakan berbagai
+                  saluran digital.
+                </p>
+              </div>
+              <div class="text-info">
+                <p><span>Batch Terdekat</span><br />November 2025</p>
+                <a href="#">Lihat Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <div class="footer-office">
+            <div class="footer-img">
+              <img src="../img/logo-gta.png" alt="" />
+            </div>
+            <div class="office-addres">
+              <h3>Kantor Kami</h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Jl. Ahmad Wahid
+                No.172B, Mantup, Baturetno, Kec. Banguntapan, Kabupaten Bantul,
+                Daerah Istimewa Yogyakarta 55197
+              </p>
+            </div>
+            <ul class="office-sosmed">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <div class="footer-support">
+              <h3>Jam Kerja</h3>
+              <ul>
+                <li><a href="#">Senin-Jumat</a></li>
+                <li><a href="#">08.00-17.00</a></li>
+                <li><a href="#">Sabtu-Minggu</a></li>
+                <li><a href="#">On Call</a></li>
+              </ul>
+            </div>
+            <div class="footer-program">
+              <h3>Program GTA</h3>
+              <ul>
+                <li><a href="bootcamp.html">Bootcamp</a></li>
+                <li><a href="serti.html">Program</a></li>
+                <li><a href="reguler.html">Kelas Reguler</a></li>
+                <li><a href="magang.html">Pemagangan</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h3>Hubungi Kami</h3>
+              <ul>
+                <li>
+                  <p></p>
+                  <a href="tel:+6289675009600"
+                    ><i class="fa-solid fa-phone"></i> +628 9675 0096 00</a
+                  >
+                </li>
+                <li>
+                  <p>
+                    <a href="mailto:gtaproid@gmail.com"
+                      ><i class="fa-solid fa-envelope"></i>
+                      gtapro@gmail.com</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://www.instagram.com/gtapro.id"
+                      ><i class="fa-brands fa-instagram"></i> gtapro.id</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>© 2024 Genesis Talent Academy</p>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+    //navbar
+    var navBar = document.getElementById('navBar');
+    window.onscroll= function() {
+      if(window.scrollY > 22) {
+        navBar.classList.add('scrolled');
+      }else{
+        navBar.classList.remove('scrolled');
+      }
+    };
+  </script>
+  <script>
+    // dropdown
+    function dropDown() {
+        var x = document.getElementById("dropdown-menu");
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    document.addEventListener("click", function(event) {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.style.display === "block") {
+        if (!dropdownMenu.contains(event.target) && !event.target.closest('.programgta')) {
+            dropdownMenu.style.display = "none";
+            }
+        }
+    });
+</script>
+<script>
+  // responsive navbar
+  const navbarNav = document.querySelector(".navbar-nav");
+  document.querySelector("#hamburger-menu").onclick = () => {
+    navbarNav.classList.toggle("active");
+  };
+  const hamburger = document.querySelector("#hamburger-menu");
+
+  document.addEventListener("click", function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  });
+</script>
+  <script>
+    // tab
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+  </script>
+  <script>
+    // faq
+    function ShowHide1(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide2(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide3(divId) {
+      if (document.getElementById(divId).style.display == "none"|| 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide4(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide5(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide6(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+       document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide7(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide8(divId) {
+      if (document.getElementById(divId).style.display == "none"  || 
+         document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+    function ShowHide9(divId) {
+      if (document.getElementById(divId).style.display == "none" || 
+        document.getElementById(divId).style.display == "") {
+        document.getElementById(divId).style.display = "block";
+      } else {
+        document.getElementById(divId).style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function detail() {
+      var content = document.getElementById("detail");
+      var lihat = document.getElementById("lihat");
+      var overlay = document.getElementById("overlay");
+
+      content.style.height = "100%";
+      lihat.style.display = "none";
+      overlay.style.opacity = "1";
+    }
+  </script>
+</html>

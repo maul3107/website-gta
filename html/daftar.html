@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar</title>
+    <link rel="stylesheet" href="../css/daftar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar" id="navBar">
+      <div class="navbar-container">
+        <div class="menu-bar">
+          <a href="#"><img class="logo" src="../img/logo-gta.png" alt="" /></a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#">Program <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="bootcamp.html">Bootcamp</a></li>
+                  <li><a href="serti.html">Sertifikasi</a></li>
+                  <li>
+                    <a href="reguler.html">Kelas Reguler</a>
+                  </li>
+                  <li><a href="magang.html">Pemagangan</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- form -->
+    <section class="form">
+      <div class="container">
+        <form onsubmit="sendMessage()">
+          <div class="judul">
+            <h3>Form Pendaftaran Bootcamp</h3>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Nama Anda</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="name" placeholder="Nama Anda.." required />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>No WhatsApp</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="number"
+                id="no"
+                placeholder="No. WhatsApp Anda.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Email Anda</label>
+            </div>
+            <div class="col-75">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Anda.."
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Pilih Program</label>
+            </div>
+            <div class="col-75">
+              <select id="program" name="program">
+                <option>Bootcamp</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Pilih Kelas</label>
+            </div>
+            <div class="col-75">
+              <select id="kelas" name="kelas">
+                <option>UI/UX Designer</option>
+                <option>Frontend Engineer</option>
+                <option>System Analyst</option>
+                <option>Desain Grafis</option>
+                <option>Backend Engineer</option>
+                <option>Digital Marketing</option>
+                <option>Manajemen Administratif</option>
+                <option>Mobile Developer</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label>Pilih Metode Belajar</label>
+            </div>
+            <div class="col-75">
+              <select id="metode" name="metode">
+                <option>Online via Zoom</option>
+                <option>Offline Office Gta Yogyakarta</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <div class="footer-office">
+            <div class="footer-img">
+              <img src="../img/logo-gta.png" alt="" />
+            </div>
+            <div class="office-addres">
+              <h3>Gta Office</h3>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Jl. Ahmad Wahid
+                No.172B, Mantup, Baturetno, Kec. Banguntapan, Kabupaten Bantul,
+                Daerah Istimewa Yogyakarta 55197
+              </p>
+            </div>
+            <ul class="office-sosmed">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <div class="footer-support">
+              <h3>Jadwal Operasional</h3>
+              <ul>
+                <li><a href="#">Senin-Jumat</a></li>
+                <li><a href="#">08.00-17.00</a></li>
+                <li><a href="#">Sabtu-Minggu</a></li>
+                <li><a href="#">On Call</a></li>
+              </ul>
+            </div>
+            <div class="footer-program">
+              <h3>Program GTA</h3>
+              <ul>
+                <li><a href="bootcamp.html">Bootcamp</a></li>
+                <li><a href="serti.html">Program</a></li>
+                <li><a href="#">Kelas Reguler</a></li>
+                <li><a href="#">Pemagangan</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h3>Kontak GTA</h3>
+              <ul>
+                <li>
+                  <p></p>
+                  <a href="tel:+6289675009600"
+                    ><i class="fa-solid fa-phone"></i> +628 9675 0096 00</a
+                  >
+                </li>
+                <li>
+                  <p>
+                    <a href="mailto:gtaproid@gmail.com"
+                      ><i class="fa-solid fa-envelope"></i>
+                      gtaproid@gmail.com</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://www.instagram.com/gtapro.id"
+                      ><i class="fa-brands fa-instagram"></i> gtapro.id</a
+                    >
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>© 2024 Genesis Talent Academy</p>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+    //navbar
+    var navBar = document.getElementById("navBar");
+    window.onscroll = function () {
+      if (window.scrollY > 22) {
+        navBar.classList.add("scrolled");
+      } else {
+        navBar.classList.remove("scrolled");
+      }
+    };
+  </script>
+  <script>
+    function sendMessage() {
+      const name = document.getElementById("name").value;
+      const no = document.getElementById("no").value;
+      const email = document.getElementById("email").value;
+      const program = document.getElementById("program").value;
+      const kelas = document.getElementById("kelas").value;
+      const metode = document.getElementById("metode").value;
+
+      const url =
+        "https://web.whatsapp.com/send?phone=62887373873788&text=Halo%2C%20saya%20sudah%20melakukan%20pemesanan%20Bootcamp%20GTA.%0ADengan%20detail%20sebagai%20berikut%3A%0A*" +
+        name +
+        "*%0A*" +
+        no +
+        "*%0A*" +
+        email +
+        "*%0A*" +
+        program +
+        "*%0A*" +
+        kelas +
+        "*%0AMetode%20Belajar%3A%20*" +
+        metode +
+        "*%0A%0AMohon%20segera%20diproses%20ya%20%F0%9F%99%8F%F0%9F%8F%BB";
+      window.open(url);
+    }
+  </script>
+</html>

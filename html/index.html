@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genesis Talent Academy</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar" id="navBar">
+      <div class="navbar-container">
+        <div class="menu-bar">
+          <a href="#"><img class="logo" src="../img/logo-gta.png" alt="" /></a>
+          <ul class="navbar-nav">
+            <li><a class="nav-active" href="#">Home</a></li>
+            <li class="programgta">
+              <button onclick="dropDown()">Program <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                  <li> 
+                    <a href="bootcamp.html"><i class="fa-solid fa-window-maximize"></i> Bootcamp</a>
+                  </li>
+                  <li> 
+                    <a href="serti.html"><i class="fa-solid fa-window-maximize"></i> Sertifikasi</a>
+                  </li>
+                  <li>
+                    <a href="reguler.html"><i class="fa-solid fa-window-maximize"></i> Kelas Reguler</a>
+                  </li>
+                  <li>
+                    <a href="magang.html"><i class="fa-solid fa-window-maximize"></i> Pemagangan</a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gal"><a href="galeri.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-extra">
+          <a id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!--Hero-->
+    <section class="hero" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="bg">
+      <div class="content">
+        <div class="hero-img">
+          <img src="../img/homebg.png" alt="">
+        </div>
+        <div  class="sz" >
+          <h1 >
+           Inilah Kesempatanmu <span class="m">#MembangunKarier</span> Bersama
+            <span class="g">Genesis Talent Academy</span>
+          </h1>
+          <p>
+            Buat kesempatan ini semakin nyata dengan menjadi bagian dari Genesis
+            Talent Academy. Mari bergabung berkolaborasi dengan kami
+          </p>
+          <a href="wa.me/6283738773837" class="cta"><i class="fa-brands fa-whatsapp"></i> Hubungi Kami</a>
+        </div>
+      </div>
+      <div>
+    </section>
+    <!-- wa -->
+    <a  href="https://wa.me/6281228430523" class="floating" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!--Why-->
+    <section class="why" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="why-judul">
+        <h3>Kenapa Memilih <br> <span>Genesis Talent Academy?</span>
+        </h3>
+      </div>
+       <div class="why-container" id="program">
+          <div class="why-box">
+            <div class="why-card">
+              <span><i class="fa-solid fa-house-signal"></i></span>
+              <p><span>Fasilitas Terbaik</span><br>Kami menyediakan fasilitas terbaik untuk mendukung proses belajar</p>
+            </div>
+            <div class="why-card">
+              <span><i class="fa-solid fa-book"></i></span>
+              <p><span>Materi Terbaru</span><br>Kami selalu meng-update materi kursus sesuai perkembangan</p>
+            </div>
+            <div class="why-card">
+              <span><i class="fa-solid fa-user-tie"></i></span>
+              <p><span>Mentor yang Ahli</span><br>Instruktur kami yang memiliki rekam jejak sukses di industri</p>
+            </div>
+          </div>
+       </div>
+    </section>
+    <!--cls-->
+    <section class="cls" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="cls-container">
+        <div class="cls-judul">
+          <h3 >Program <span>Kami</span></h3>
+          <p>Program pelatihan Kami dirancang untuk memenuhi kebutuhan tantangan di era digital saat ini.</p>
+        </div>
+        <div class="cls-box">
+            <div class="cls-card">
+              <div class="cls-img">
+                <img src="../img/bootcamp.png" alt="">
+                <div class="text-judul">
+                  <h4>Bootcamp</h4>
+                </div>
+              </div>
+              <div class="cls-text">
+                <div class="text-info">
+                  <p>Program bootcamp untuk meningkatkan keterampilan praktis dan pengetahuan sesuai bidang masing-masing melalui proyek nyata dan sesi interaktif!</p>
+                </div>
+              </div>
+              <div class="text-button">
+                <a href="bootcamp.html">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div class="cls-card">
+              <div class="cls-img">
+                <img src="../img/sertifi.png" alt="">
+                <div class="text-judul">
+                  <h4>Sertifikasi</h4>
+                </div>
+              </div>
+              <div class="cls-text">
+                <div class="text-info">
+                  <p>Program sertifikasi kami  memberikan peserta pemahaman mendalam tentang konsep pemrograman dan keterampilan pemrograman.</p>
+                </div>
+              </div>
+              <div class="text-button">
+                <a href="serti.html">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div class="cls-card">
+              <div class="cls-img">
+                <img src="../img/classreguler.png" alt="">
+                <div class="text-judul">
+                  <h4>Kelas Reguler</h4>
+                </div>
+              </div>
+              <div class="cls-text">
+                <div class="text-info">
+                  <p>Kelas reguler kami dirancang untuk menyesuaikan dengan jadwal Anda, sehingga Anda dapat belajar tanpa mengganggu aktivitas lainnya.</p>
+                </div>
+              </div>
+              <div class="text-button">
+                <a href="serti.html">Lihat Selengkapnya</a>
+              </div>
+            </div>
+            <div class="cls-card">
+              <div class="cls-img">
+                <img src="../img/pemagangan.png" alt="">
+                <div class="text-judul">
+                  <h4>Pemagangan</h4>
+                </div>
+              </div>
+              <div class="cls-text">
+                <div class="text-info">
+                  <p>Program pemagangan kami memberikan pengetahuan dan pengalaman langsung kepada peserta dalam dunia industri teknologi yang kompeten.</p>
+                </div>
+              </div>
+              <div class="text-button">
+                <a href="reguler.html">Lihat Selengkapnya</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--tim-->
+    <section class="program" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="program-judul">
+        <h2>Temui Tim <span>Genesis Talent Academy</span></h2>
+        <p>
+          Dapatkan pengalaman belajar dan metode terbaik dari para expert di
+          bidangnya
+        </p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="program-img">
+              <img src="../img/men1.png" alt="">
+            </div>
+            <div class="program-nama">
+              <h4>Anri Wahyu C., S.T</h4>
+            </div>
+            <div class="program-info">
+              <p>Direktur</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="program-img">
+              <img src="../img/men4.png" alt="">
+            </div>
+            <div class="program-nama">
+              <h4>Artin Wuriyani, S.PSI</h4>
+            </div>
+            <div class="program-info">
+              <p>Penanggung Jawab</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="program-img">
+              <img src="../img/men3.png" alt="">
+            </div>
+            <div class="program-nama">
+              <h4>Nurhidayat N, S. Kom</h4>
+            </div>
+            <div class="program-info">
+              <p>Koor. Sales & Marketing</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="program-img">
+              <img src="../img/men2.png" alt="">
+            </div>
+            <div class="program-nama">
+              <h4>Firzan Risnanda, S. Kom</h4>
+            </div>
+            <div class="program-info">
+              <p>Koor. Edukasi</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!--relasi-->
+    <section class="relasi">
+      <div class="relasi-judul">
+        <h2><span>Mitra</span> Kami</h2>
+        <p>Genesis Talent Academy telah di percaya </p>
+      </div>
+      <div class="slider owl-carousel">
+        <div class="card">
+          <img class="c" src="../img/logo-bijak.png" alt="">
+        </div>
+        <div class="card">
+          <img src="../img/logo-biru.png" alt="">
+        </div>
+        <div class="card">
+          <img class="c" src="../img/logo-esoda.png" alt="">
+        </div>
+        <div class="card">
+          <img src="../img/logo-bantul.png" alt="">
+        </div>
+        <div class="card">
+          <img class="c" src="../img/logo-genesis.png" alt="">
+        </div>
+        <div class="card">
+          <img src="../img/logo-kuda.png" alt="">
+        </div>
+        <div class="card">
+          <img class="c" src="../img/logo-prakerja.png" alt="">
+        </div>
+        <div class="card">
+          <img src="../img/logo-y.png" alt="">
+        </div>
+        <div class="card">
+          <img class="c" src="../img/logo-siapcetak.png" alt="">
+        </div>
+        <div class="card">
+          <img src="../img/logo-sodapos.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <div class="footer-office">
+            <div class="footer-img">
+              <img src="../img/logo-gta.png" alt="">
+            </div>
+            <div class="office-addres">
+              <h3>Kantor Kami</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Jl. Ahmad Wahid No.172B, Mantup, Baturetno, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55197 </p>
+            </div>
+            <ul class="office-sosmed">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <div class="footer-support">
+              <h3>Jam Kerja</h3>
+              <ul>
+                <li><p>Senin-Jumat</p></li>
+                <li><p>08.00-17.00</p></li>
+                <li><p>Sabtu-Minggu</p></li>
+                <li><p>On Call</p></li>
+              </ul>
+            </div>
+            <div class="footer-program">
+              <h3>Program GTA</h3>
+              <ul>
+                <li><a href="bootcamp.html">Bootcamp</a></li>
+                <li><a href="serti.html">Program</a></li>
+                <li><a href="reguler.html">Kelas Reguler</a></li>
+                <li><a href="magang.html">Pemagangan</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h3>Hubungi Kami</h3>
+              <ul>
+                <li><p></p><a href="tel:+6289675009600"><i class="fa-solid fa-phone"></i> +628 9675 0096 00</a></li>
+                <li><p><a href="mailto:gtaproid@gmail.com"><i class="fa-solid fa-envelope"></i> gtapro@gmail.com</a></p></li>
+                <li><p><a href="https://www.instagram.com/gtapro.id"><i class="fa-brands fa-instagram"></i> gtapro.id</a></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>© 2024 Genesis Talent Academy</p>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+    //navbar
+    var navBar = document.getElementById('navBar');
+    window.onscroll= function() {
+      if(window.scrollY > 22) {
+        navBar.classList.add('scrolled');
+      }else{
+        navBar.classList.remove('scrolled');
+      }
+    };
+  </script>
+  <script>
+    // dropdown
+    function dropDown() {
+        var x = document.getElementById("dropdown-menu");
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    document.addEventListener("click", function(event) {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.style.display === "block") {
+        if (!dropdownMenu.contains(event.target) && !event.target.closest('.programgta')) {
+            dropdownMenu.style.display = "none";
+            }
+        }
+    });
+</script>
+<script>
+  // responsive navbar
+  const navbarNav = document.querySelector(".navbar-nav");
+  document.querySelector("#hamburger-menu").onclick = () => {
+    navbarNav.classList.toggle("active");
+  };
+  const hamburger = document.querySelector("#hamburger-menu");
+
+  document.addEventListener("click", function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  });
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ <script>
+  // relasi
+   $(".slider").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      900: {
+        items: 3
+      },
+      1000: {
+        items: 4 
+      }
+    }
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // tim
+  var swiper = new Swiper('.mySwiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+</script>
+</html>

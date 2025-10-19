@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genesis Talent Academy</title>
+    <link rel="stylesheet" href="../css/magang.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar" id="navBar">
+      <div class="navbar-container">
+        <div class="menu-bar">
+          <a href="#"><img class="logo" src="../img/logo-gta.png" alt="" /></a>
+          <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="programgta">
+              <button onclick="dropDown()">Program <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                  <li> 
+                    <a href="bootcamp.html"><i class="fa-solid fa-window-maximize"></i> Bootcamp</a>
+                  </li>
+                  <li> 
+                    <a href="serti.html"><i class="fa-solid fa-window-maximize"></i> Sertifikasi</a>
+                  </li>
+                  <li>
+                    <a href="reguler.html"><i class="fa-solid fa-window-maximize"></i> Kelas Reguler</a>
+                  </li>
+                  <li>
+                    <a class="nav-active" href="#"><i class="fa-solid fa-window-maximize"></i> Pemagangan</a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gal"><a href="galeri.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-extra">
+          <a id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero" >
+      <div class="hero-container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        <div class="hero-img">
+          <img src="../img/maganghero.png" alt="">
+        </div>
+        <div class="hero-text">
+          <h1>Dapatkan Pengalaman Langsung Bekerja Dalam Projek Nyata Dengan Mentor Ahli</h1>
+          <p>Jangan Lewatkan Kesempatan Ini! Daftar hari ini dan jadilah bagian dari generasi programming yang siap menghadapi tantangan masa depan!</p>
+          <a href="#cls" class="hero-cta"><i class="fa-brands fa-whatsapp"></i> Daftar Sekarang</a>
+        </div>
+      </div>
+     </section>
+     <!-- wa -->
+    <a href="https://wa.me/6281228430523" class="floating" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  <!--why-->
+  <section class="serti-why" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="serti-container">
+      <div class="serti-judul">
+        <h3>Mengapa <span>Memilih</span> Pemagangan <span>GTA</span></h3>
+      </div>
+      <div class="serti-box">
+        <div class="serti-card">
+          <li>
+            <span><i class="fa-solid fa-industry"></i></span>
+            <p>
+              <span>Koneksi Industri yang Luas</span><br />
+              Genesis Talent Academy memiliki jaringan luas di industri terkait
+            </p>
+          </li>
+        </div>
+        <div class="serti-card">
+          <li>
+            <span><i class="fa-solid fa-desktop"></i></span>
+            <p>
+              <span>Fasilitas dan Sumber Daya Modern</span><br />
+              Dengan fasilitas yang canggih dan sumber daya yang lengkap
+            </p>
+          </li>
+        </div>
+        <div class="serti-card">
+          <li>
+            <span><i class="fa-solid fa-users"></i></span>
+            <p>
+              <span>Lingkungan yang Mendukung</span><br />
+              GTA menciptakan lingkungan belajar yang mendukung dan inklusif
+            </p>
+          </li>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- class -->
+  <section class="cls" id="cls" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="cls-container">
+      <div class="cls-judul">
+        <h3><span>Pilihlah</span> Pemagangan <span>Terbaik</span> Sesuai <span>Minatmu</span></h3>
+      </div>
+      <div class="cls-box">
+        <div class="magang-card">
+          <div class="magang-img">
+            <img src="../img/uiuxmg.png" alt="">
+            <div class="magang-info">
+              <p>Tersisa 3 Slot</p>
+              <h4>UI/UX Designer</h4>
+            </div>
+          </div>
+          <div class="magang-text">
+            <div class="magang-list">
+              <p><i class="fa-solid fa-circle-check"></i> Diberi Bimbingan</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Fasilitas</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Sertifikat</p>
+              <p><i class="fa-solid fa-circle-check"></i> Digaji</p>
+            </div>
+            <div class="magang-daftar">
+              <a href="#">Daftar</a>
+            </div>
+          </div>
+        </div> 
+        <div class="magang-card">
+          <div class="magang-img">
+            <img src="../img/femg.png" alt="">
+            <div class="magang-info">
+              <p>Tersisa 1 Slot</p>
+              <h4>Frontend Engineer</h4>
+            </div>
+          </div>
+          <div class="magang-text">
+            <div class="magang-list">
+              <p><i class="fa-solid fa-circle-check"></i> Diberi Bimbingan</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Fasilitas</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Sertifikat</p>
+              <p><i class="fa-solid fa-circle-check"></i> Digaji</p>
+            </div>
+            <div class="magang-daftar">
+              <a href="#">Daftar</a>
+            </div>
+          </div>
+        </div> 
+        <div class="magang-card">
+          <div class="magang-img">
+            <img src="../img/benmg.png" alt="">
+            <div class="magang-info">
+              <p>Tersisa 2 Slot</p>
+              <h4>Backend Engineer</h4>
+            </div>
+          </div>
+          <div class="magang-text">
+            <div class="magang-list">
+              <p><i class="fa-solid fa-circle-check"></i> Diberi Bimbingan</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Fasilitas</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Sertifikat</p>
+              <p><i class="fa-solid fa-circle-check"></i> Digaji</p>
+            </div>
+            <div class="magang-daftar">
+              <a href="#">Daftar</a>
+            </div>
+          </div>
+        </div> 
+        <div class="magang-card">
+          <div class="magang-img">
+            <img src="../img/mamg.png" alt="">
+            <div class="magang-info">
+              <p>Tersisa 2 Slot</p>
+              <h4>M Administratif</h4>
+            </div>
+          </div>
+          <div class="magang-text">
+            <div class="magang-list">
+              <p><i class="fa-solid fa-circle-check"></i> Diberi Bimbingan</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Fasilitas</p>
+              <p><i class="fa-solid fa-circle-check"></i> Mendapat Sertifikat</p>
+              <p><i class="fa-solid fa-circle-check"></i> Digaji</p>
+            </div>
+            <div class="magang-daftar">
+              <a href="#">Daftar</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+    <div class="cls-lebih-banyak">
+      <button onclick="banyak()">Lihat Lebih Banyak</button>
+    </div> 
+  </section>
+    <!--testi-->
+    <section class="testi" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="testi-container">
+        <div class="testi-judul" >
+          <h3><span>Cerita Sukses</span> Alumni Genesis <span>Talent Academy</span> Sertifikasi</h3>
+          <p>Mereka sudah merasakan serunnya belajar skill digital dan meraih karier yang mereka inginkan. Kamu selanjutnya?</p>
+        </div>
+        <div class="testi-box">
+          <div class="testi-card">
+            <div class="testi-text">
+              <div class="coment">
+                <i class="fa-solid fa-quote-left"></i>
+               </div>
+              <p>Pemagangan di Gta sangat menambah wawasan dan menyenangkan. Bertemu dengan facil yang insightful dan komunikatif membuat kelas menjadi hidup dan interaktif. Saat ini saya berkeinginan untuk switch career menjadi PM dan belajar di Gta adalah salah satu jalan untuk mencapai hal tersebut.</p>
+            </div>
+            <div class="testi-info">
+              <img src="../img/testi4.jpg" alt="">
+              <p><span>Matheus Rendy</span> <br>Desainer Grafis <b>Bank BCA</b></p>
+            </div>
+          </div>
+          <div class="testi-card">
+            
+            <div class="testi-text">
+              <div class="coment">
+                <i class="fa-solid fa-quote-left"></i>
+               </div>
+              <p>Setelah lulus dari Pemagangan GTA, selain dapat ilmu tentang konsep dasar & advanced mengenai QA Engineer, aku jadi lebih aware sama product yang aku kembangkan sekarang ini. Berhubung di kantor banyak aplikasi yang lagi dikerjakan, ilmu dari GTA ini sangat terpakai!</p>
+            </div>
+            <div class="testi-info">
+              <img src="../img/testi5.jpg" alt="">
+              <p><span>Justin Beynard</span> <br>System Analyst di <b>PT ASDF Indonesia</b></p>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-text">
+              <div class="coment">
+                <i class="fa-solid fa-quote-left"></i>
+               </div>
+              <p>Kalau bicara soal kesan selama Pemagangan di Gta ga akan ada habisnya. Bekal hardskill dan softskill yang aku dapet di Sertifikasi menjadi salah satu alasan aku bisa diterima sebagai Software Engineer di salah satu perusahaan retail terbesar di Indonesia dan mampu melakukan kerjaan dengan sangat baik.
+              </p>
+            </div>
+            <div class="testi-info">
+              <img src="../img/testi6.jpg" alt="">
+              <p><span>Georgia Princes</span> <br>UI/UX Desainer di <b>Indomaret Group</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- faq -->
+  <h2 class="faq-heading">Pertanyaan Seputar <span>Pemagangan</span></h2>
+  <div class="faq-container"></div>
+  <!--footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <div class="footer-office">
+          <div class="footer-img">
+            <img src="../img/logo-gta.png" alt="">
+          </div>
+          <div class="office-addres">
+            <h3>Kantor Kami</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Jl. Ahmad Wahid No.172B, Mantup, Baturetno, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55197 </p>
+          </div>
+          <ul class="office-sosmed">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <div class="footer-support">
+            <h3>Jam Kerja</h3>
+            <ul>
+              <li><p>Senin-Jumat</p></li>
+              <li><p>08.00-17.00</p></li>
+              <li><p>Sabtu-Minggu</p></li>
+              <li><p>On Call</p></li>
+            </ul>
+          </div>
+          <div class="footer-program">
+            <h3>Program GTA</h3>
+            <ul>
+              <li><a href="bootcamp.html">Bootcamp</a></li>
+              <li><a href="serti.html">Program</a></li>
+              <li><a href="#">Kelas Reguler</a></li>
+              <li><a href="#">Pemagangan</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <ul>
+              <li><p></p><a href="tel:+6289675009600"><i class="fa-solid fa-phone"></i> +628 9675 0096 00</a></li>
+              <li><p><a href="mailto:gtaproid@gmail.com"><i class="fa-solid fa-envelope"></i> gtapro@gmail.com</a></p></li>
+              <li><p><a href="https://www.instagram.com/gtapro.id"><i class="fa-brands fa-instagram"></i> gtapro.id</a></p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>© 2024 Genesis Talent Academy</p>
+  </div>
+  </body>
+  <script>
+    feather.replace();
+    //navbar
+    var navBar = document.getElementById('navBar');
+    window.onscroll= function() {
+      if(window.scrollY > 22) {
+        navBar.classList.add('scrolled');
+      }else{
+        navBar.classList.remove('scrolled');
+      }
+    };
+  </script>
+  <script>
+    // dropdown
+    function dropDown() {
+        var x = document.getElementById("dropdown-menu");
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    document.addEventListener("click", function(event) {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.style.display === "block") {
+        if (!dropdownMenu.contains(event.target) && !event.target.closest('.programgta')) {
+            dropdownMenu.style.display = "none";
+            }
+        }
+    });
+</script>
+<script>
+  // responsive navbar
+  const navbarNav = document.querySelector(".navbar-nav");
+  document.querySelector("#hamburger-menu").onclick = () => {
+    navbarNav.classList.toggle("active");
+  };
+  const hamburger = document.querySelector("#hamburger-menu");
+
+  document.addEventListener("click", function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  });
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ <script>
+  // faq
+  const FAQData = [
+    {
+      question: "Apa itu Program Pemagangan Talent Academy?",
+      answer: [
+        "Program Pemagangan Talent Academy adalah kesempatan bagi peserta untuk mendapatkan pengalaman kerja praktis di industri tertentu. Program ini dirancang untuk membantu peserta mengembangkan keterampilan profesional dan mempersiapkan mereka untuk memasuki dunia kerja.",
+      ],
+    },
+    {
+      question: "Siapa yang dapat mengikuti program pemagangan ini?",
+      answer: [
+        "Program ini terbuka untuk semua peserta yang telah menyelesaikan pelatihan dasar di bidang terkait, baik yang baru lulus maupun yang sedang mencari pengalaman kerja tambahan.",
+      ],
+    },
+    {
+      question: "Berapa lama durasi program pemagangan?",
+      answer: [
+        "Durasi program pemagangan bervariasi, biasanya antara 3 hingga 6 bulan, tergantung pada jenis pemagangan dan kebutuhan perusahaan mitra.",
+      ],
+    },
+    {
+      question: "Apakah peserta akan dibayar selama pemagangan?",
+      answer: [
+        "Beberapa program pemagangan menawarkan kompensasi, tetapi ini dapat bervariasi tergantung pada kebijakan perusahaan mitra. Pastikan untuk memeriksa informasi spesifik saat mendaftar.",
+      ],
+    },
+    {
+      question: "Apa yang akan saya pelajari selama pemagangan?",
+      answer: [
+        "Peserta akan mendapatkan pengalaman praktis dalam proyek nyata, mentoring dari profesional di bidangnya, serta pelatihan tambahan untuk mengembangkan keterampilan yang relevan.",
+      ],
+    },
+    {
+      question: "Apakah ada pelatihan sebelum pemagangan dimulai?",
+      answer: [
+        "Ya, peserta akan mengikuti sesi orientasi dan pelatihan sebelum memulai pemagangan untuk mempersiapkan mereka dengan keterampilan dan pengetahuan yang diperlukan.",
+      ],
+    },
+    {
+      question: "Bagaimana cara mendaftar untuk program pemagangan?",
+      answer: [
+        "Anda dapat mendaftar melalui situs web kami dengan mengisi formulir pendaftaran dan menyertakan CV. Pastikan untuk memilih bidang pemagangan yang Anda inginkan.",
+      ],
+    },
+    {
+      question: "Apakah ada peluang untuk dipekerjakan setelah pemagangan?",
+      answer: [
+        "Banyak perusahaan mitra kami mencari cara untuk merekrut peserta yang menunjukkan kinerja baik selama pemagangan. Namun, tidak ada jaminan pekerjaan setelah program selesai.",
+      ],
+    },
+  ];
+  
+  const FAQContainer = document.querySelector(".faq-container");
+  
+  const removeAllExpanded = () => {
+    const questionContainers = document.querySelectorAll(
+      ".faq-container .question-container"
+    );
+  
+    questionContainers.forEach((q) => {
+      q.classList.remove("expanded");
+      const answerContainer = q.querySelector(".answer-container");
+      answerContainer.style.maxHeight = "0";
+    });
+  };
+  
+  const displayFAQ = () => {
+    FAQData.forEach((q) => {
+      const answerHTML = q.answer
+        .map(
+          (a) => `<div class="answer">
+          <span class="answer-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </span>
+          ${a}
+        </div>`
+        )
+        .join("");
+  
+      const html = `<div class="question">
+            ${q.question}
+            <span class="question-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </span>
+          </div>
+  
+          <div class="answer-container">
+            ${answerHTML}
+          </div>`;
+  
+      const questionContainer = document.createElement("div");
+      questionContainer.classList.add("question-container");
+      questionContainer.innerHTML = html;
+  
+      FAQContainer.appendChild(questionContainer);
+  
+      const question = questionContainer.querySelector(".question");
+  
+      question.addEventListener("click", () => {
+        if (!questionContainer.classList.contains("expanded")) {
+          removeAllExpanded();
+        }
+  
+        questionContainer.classList.toggle("expanded");
+        const isExpanded = questionContainer.classList.contains("expanded");
+  
+        const answerContainer =
+          questionContainer.querySelector(".answer-container");
+        const contentHeight = answerContainer.scrollHeight;
+        answerContainer.style.maxHeight = isExpanded ? `${contentHeight}px` : "0";
+      });
+    });
+  };
+  
+  displayFAQ();
+  </script>
+      <script>
+        // class
+        function banyak() {
+          var content = document.querySelector('.cls-container');
+          content.classList.toggle('show-more');
+          var button = document.querySelector('.cls-lebih-banyak button');
+          if (content.classList.contains('show-more')) {
+            button.textContent = 'Lihat Lebih Sedikit';
+          } else {
+            button.textContent = 'Lihat Lebih Banyak';
+          }
+        }
+      </script>
+</html>

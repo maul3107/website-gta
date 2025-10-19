@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Api</title>
+    <link rel="stylesheet" href="../css/blog-api.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar" id="navBar">
+      <div class="navbar-container">
+        <div class="menu-bar">
+          <a href="#"><img class="logo" src="../img/logo-gta.png" alt="" /></a>
+          <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="programgta">
+              <button onclick="dropDown()">Program <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                  <li> 
+                    <a href="bootcamp.html"><i class="fa-solid fa-window-maximize"></i> Bootcamp</a>
+                  </li>
+                  <li> 
+                    <a href="serti.html"><i class="fa-solid fa-window-maximize"></i> Sertifikasi</a>
+                  </li>
+                  <li>
+                    <a href="reguler.html"><i class="fa-solid fa-window-maximize"></i> Kelas Reguler</a>
+                  </li>
+                  <li>
+                    <a href="magang.html"><i class="fa-solid fa-window-maximize"></i> Pemagangan</a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gal"><a href="galeri.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-extra">
+          <a id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- wa -->
+      <a href="https://wa.me/6281228430523" class="floating" target="_blank">
+         <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    <!-- content -->
+    <section class="content">
+        <div class="content-container">
+            <!-- judul -->
+            <div class="content-judul">
+                <h1>API: Manfaat, Jenis, Fungsi dan Cara Kerjanya</h1>
+                <h5>By Team / April 20, 2024</h5>
+                <div class="judul-img">
+                  <img src="../img/api.png" alt="">
+                </div>
+            </div>
+            <!-- content text -->
+             <div class="content-text">
+                <h2 id="pengertian">Apa Itu API?</h2>
+                <p>Secara definisi, API adalah sekumpulan kode pemrograman yang memungkinkan transmisi data antara satu produk perangkat lunak dengan produk perangkat lunak lain, sehingga keduanya dapat lancar berkomunikasi satu sama lain. Misalnya, setiap kali Anda menggunakan aplikasi seperti Instagram, mengirim pesan di apps cloud collaboration Microsoft Teams, atau melihat data ramalan cuaca di smartphone, hal tersebut dapat terjadi berkat peranan API.</p>
+                <p class="p2">API merupakan singkatan dari Application Programming Interface. Dalam konteks API, kata aplikasi mengacu pada perangkat lunak apa pun dengan fungsi yang berbeda. API dapat diibaratkan sebagai kontrak layanan antara dua aplikasi. Kontrak ini mendefinisikan bagaimana keduanya berkomunikasi satu sama lain berdasarkan permintaan dan tanggapan pengguna. Dokumentasi API mereka berisi informasi tentang bagaimana developer menyusun mekanisme penanggulangan permintaan dan tanggapan tersebut.</p>
+                <h2 id="jenis">Apa Saja Jenis-jenis API?</h2>
+                <p>API diklasifikasikan berdasarkan hak akses dan lingkup penggunaannya. Berdasarkan hak aksesnya, terdapat empat jenis API yakni sebagai berikut:</p>
+                <h3 id="hak">Jenis API berdasarkan Hak Akses</h3>
+                <h4 id="private">1. Private API</h4>
+                <p>Private API adalah jenis API internal yang berlaku untuk suatu perusahaan dan tidak terbuka untuk penggunaan umum. Lazimnya, API jenis private ini digunakan untuk menghubungkan sistem dan data dalam bisnis, misalnya dalam pengembangan aplikasi atau website tertentu.</p>
+                <p class="p2">Developer dapat menggunakan API ini untuk mengintegrasikan sistem atau aplikasi TI perusahaan, membangun sistem baru, atau aplikasi yang ditujukan untuk pelanggan dengan memanfaatkan sistem yang ada. Meskipun aplikasi tersedia untuk umum, interface tersebut tetap tersedia hanya untuk mereka yang bekerja secara langsung dengan penerbit API yang juga memungkinkan perusahaan untuk sepenuhnya mengontrol penggunaan API.</p>
+                <h4 id="public">2. Public API</h4>
+                <p>Kebalikannya dari Private API, Public API atau sering juga disebut sebagai Open API terbuka untuk umum dan dapat digunakan oleh siapa pun atau organisasi mana pun dalam lintas platform. Siapa pun bisa menggunakan API jenis ini, namun tentunya dengan mematuhi berbagai persyaratan, otorisasi hingga biaya yang terkait dengan penggunaan Public API tertentu.</p>
+                <p class="p2">Secara penggunaan, Public API paling mudah digunakan sehingga dapat langsung diterapkan pada aplikasi yang Anda kembangkan. Contoh dari API jenis Public ini misalnya API untuk Google Maps, API Facebook, API untuk database jadwal penerbangan suatu maskapai, API ramalan cuaca dari BMKG, hingga API untuk menarik data resmi termutakhir terkait Covid di Indonesia.</p>
+                <h4 id="partner">3. Partner API</h4>
+                <p>Partner API pada dasarnya dapat digunakan untuk kebutuhan dan kepentingan umum, namun hanya dapat diakses oleh developer eksternal resmi untuk menjembatani kemitraan B2B (business-to-business) yang telah menandatangani perjanjian dan kesepakatan dengan penyedia API. Anda dapat menggunakan Partner API dengan cara mendaftar kepada penyedia API, untuk kemudian menggunakannya hanya di aplikasi tertentu berdasarkan perjanjian.</p>
+                <h4 id="composite">4. Composite API</h4>
+                <p>Composite API adalah API yang mengkombinasikan dua atau lebih API yang berbeda untuk menyusun urutan operasi sistem yang kompleks dan saling terkait satu sama lain. Composite API lazim digunakan ketika Anda membutuhkan solusi untuk meningkatkan kecepatan dan performa aplikasi pada perilaku API yang kompleks, jika dibandingkan dengan API individual.</p>
+                <h3 id="lingkup">Jenis API berdasarkan Lingkup Penggunaan</h3>
+                <p>Adapun berdasarkan lingkup penggunaannya, terdapat empat jenis API yakni sebagai berikut:</p>
+                <h4 id="database">1. Database API</h4>
+                <p>Database API memungkinkan komunikasi antara aplikasi dan sistem manajemen database. Developer bekerja dengan database dengan cara menulis query untuk mengakses data, mengubah tabel, dan sebagainya. Misalnya, database API Drupal 7 memungkinkan pengguna untuk menulis query terpadu untuk database yang berbeda, baik yang proprietary maupun open-source (Oracle, MongoDB, PostgreSQL, MySQL, CouchDB, dan MSSQL).</p>
+                <h4 id="operating">2. Operating Systems API</h4>
+                <p>Jenis API ini mendefinisikan bagaimana aplikasi menggunakan sumber daya dan layanan sistem operasi. Setiap OS memiliki set API, misalnya Windows API atau Linux API (kernel-user space API dan kernel internal API).</p>
+                <h4 id="remote">3. Remote API</h4>
+                <p>Remote API menentukan standar interaksi untuk aplikasi yang berjalan pada mesin yang berbeda. Dengan kata lain, satu produk perangkat lunak mengakses sumber daya yang terletak di luar perangkat yang memintanya dan menjelaskan namanya.</p>
+                <p class="p2">Karena dua aplikasi jarak jauh terhubung melalui jaringan komunikasi, khususnya internet, sebagian besar Remote API ditulis berdasarkan standar web. Java Database Connectivity API dan Java Remote Method Invocation API merupakan dua contoh jenis Remote API yang umum digunakan developer.</p>
+                <h4 id="web">4. Web API</h4>
+                <p>Web API adalah jenis API yang paling umum digunakan developer. Web API menyediakan data yang dapat dibaca mesin dan transfer fungsionalitas antara sistem berbasis web yang mewakili arsitektur client-server. API ini terutama mengirimkan permintaan dari aplikasi web dan tanggapan dari server menggunakan Hypertext Transfer Protocol (HTTP).</p>
+                <p class="p2">Developer dapat menggunakan Web API untuk memperluas fungsionalitas aplikasi atau situs mereka. Misalnya, Pinterest API dilengkapi dengan tools untuk menambahkan data Pinterest pengguna seperti board atau pin ke situs web. Contoh lain, Google Maps API memungkinkan penambahan peta dengan lokasi yang diajukan oleh pengguna perorangan maupun organisasi.</p>
+                <div class="baca-juga">
+                  <a href="#"><span>Baca Juga:</span> SPSS Adalah:Pengertian,Kelebihan,dan Kekurangannya</a>
+                </div>
+                <h2 id="cara">Bagaimana Arsitektur dan Cara Kerja API?</h2>
+                <p>Arsitektur API umumnya dijelaskan sebagai istilah client dan server. Aplikasi yang mengirimkan permintaan disebut client, sedangkan aplikasi yang mengirim respons disebut server. Jadi dalam contoh aplikasi ramalan cuaca, database informasi cuaca dari BMKG adalah server, dan aplikasi mobile-nya adalah client.</p>
+                <p class="p2">Terdapat empat arsitektur API yang paling sering digunakan oleh developer dalam pengembangan aplikasi berdasarkan pada bentuk data yang dikirim, di antaranya:</p>
+                <h4 id="soap">1. SOAP API</h4>
+                <p>SOAP adalah protokol untuk bertukar informasi terstruktur dalam lingkungan terdistribusi yang terdesentralisasi, menurut definisi oleh Microsoft yang mengembangkannya. Secara umum, spesifikasi ini berisi aturan sintaks untuk pesan permintaan dan respons yang dikirim oleh aplikasi web. API yang mematuhi prinsip SOAP memungkinkan pengiriman pesan XML antar sistem melalui HTTP atau Simple Mail Transfer Protocol (SMTP) untuk mentransfer email.</p>
+                <p class="p2">Berdasarkan namanya, API ini menggunakan Simple Object Access Protocol (SOAP). Client dan server bertukar pesan menggunakan XML. Ini adalah API yang fleksibilitasnya tergolong minim, sehingga lebih populer digunakan pada masa lalu.</p>
+                <h4 id="rpc">2. RPC API</h4>
+                <p>RPC API merupakan akronim dari Remote Procedure Calls. Pada jenis RPC API, alur komunikasi antara client side dan server side dilakukan secara sederhana, yakni client menyelesaikan fungsi (ataupun prosedur) di server, dan server mengirimkan output kembali ke client.</p>
+                <p class="p2">Protokol ini menentukan interaksi antara aplikasi berbasis client-server. Satu program (client) meminta data atau fungsionalitas dari program lain (server), yang terletak di komputer lain di jaringan, dan server mengirimkan respons yang diperlukan.</p>
+                <p class="p2">RPC API memiliki dua jenis, yaitu XML-RPC dan JSON-RPC. Perbedaan keduanya terletak pada media perpindahan data. XML-RPC menggunakan media berupa XML (Extensible Markup Language), sedangkan JSON-RPC menggunakan JSON (JavaScript Object Notation) sebagai media untuk mentransmisikan suatu data.</p>
+                <h4 id="websocket">3. Websocket API</h4>
+                <p>Websocket API adalah pengembangan API web modern lainnya yang menggunakan objek JSON untuk meneruskan data. WebSocket API mendukung komunikasi dua arah antara aplikasi client dan server. Server dapat mengirim pesan panggilan balik ke client yang terhubung, membuat Websocket API lebih efisien daripada REST API.</p>
+                <h4 id="rest">4. REST API</h4>
+                <p>REST API adalah API paling populer dan fleksibel saat ini. Tidak seperti SOAP yang merupakan protokol, REST adalah arsitektur perangkat lunak dengan enam batasan untuk membangun aplikasi yang bekerja melalui HTTP yang pada umumnya merupakan layanan web. World Wide Web adalah realisasi dan penerapan paling umum dari gaya arsitektur ini.</p>
+                <p class="p2">REST adalah kepanjangan dari Representational State Transfer. Kelebihan dari REST yakni tidak membutuhkan coding yang panjang sehingga menjadikan proses pengembangan aplikasi maupun website lebih efisien. Selain itu, REST berbekal data berupa JSON yang memiliki keuntungan dari sisi performa aplikasi yang lebih ringan jika menggunakan JSON.</p>
+                <h4 id="untung">Keuntungan API bagi Pengembangan Website dan Aplikasi</h4>
+                <p>API secara khusus sangat membantu bagi para developer. Sebab, API bisa meningkatkan efisiensi waktu, fleksibilitas dan menghemat biaya. Lalu, apa saja manfaat dan keuntungan API bagi pengembangan website dan aplikasi? Yuk, simak 3 keuntungan API sebagai berikut:</p>
+                <h4 id="fungsi">1. Memudahkan Pengembangan Aplikasi yang Kompleks Sehingga Lebih Fungsional</h4>
+                <p>Dengan menggunakan API, lebih sedikit upaya-upaya manusia yang diperlukan dan alur kerja pun dapat dengan mudah diperbarui, sehingga pembuatan aplikasi yang fungsional dan kompleks pun akan berlangsung lebih mudah dan cepat.</p>
+                <p class="p2">Selain itu, konten dan informasi baru yang terhubung dengan aplikasi Anda secara otomatis akan terupdate ke seluruh pengguna aplikasi Anda dengan cepat dan efisien di semua channel. Sebab aplikasi yang dikembangkan berdasarkan API akan otomatis memiliki fitur yang diberikan oleh aplikasi tujuan, Anda tidak perlu menambahkan data secara manual ketika terdapat pembaruan.</p>
+                <h4 id="ringan">2. Meringankan Beban Kerja Server</h4>
+                <p>Berkat API, data-data Anda yang dibutuhkan di server tidak perlu disimpan secara keseluruhan, sebab Anda cukup minta API untuk memperoleh data terbaru dari server aplikasi sumber. Tentunya, kemudahan ini akan sangat meringankan beban kerja server Anda karena server tidak akan terbebani oleh pembaruan database.</p>
+                <div class="baca-juga">
+                  <a href="#"><span>Baca Juga:</span>  SPSS Adalah:Pengertian,Kelebihan,dan Kekurangannya</a>
+                </div>
+                <p class="p2">Selain itu, keuntungan positif lain dari API yakni dapat meminimalisir potensi website/aplikasi Anda tidak dapat diakses lantaran server down, di mana server down cukup berpotensi menurunkan performa website/aplikasi Anda yang juga berbanding lurus dengan kemerosotan pengalaman pengguna website/aplikasi Anda.</p>
+                <h4 inovasi>3. Meningkatkan Efisiensi dan Inovasi Pengembangan Aplikasi</h4>
+                <p>Dengan menggunakan API, developer tidak perlu repot menyusun coding-coding yang kompleks hanya untuk melakukan komunikasi aplikasi mereka dengan aplikasi lain, sebab terdapat API untuk memudahkan komunikasi dengan aplikasi developer lain. Dengan demikian, developer Anda akan lebih produktif mengeksplorasi terobosan strategis lain yang lebih inovatif dalam rangka proses pengembangan aplikasi yang Anda miliki.</p>
+                <h2 id="simpulan">Kesimpulan</h2>
+                <p>Dari paparan di atas, sangat jelas bahwa peranan API jauh lebih besar jika kita memandangnya tidak hanya dari sudut pengembangan perangkat lunak modern, namun juga dari sudut kolaborasi maupun pengembangan bisnis Anda. Dua hal yang perlu diperhatikan pembuat keputusan dan software developer adalah memilih API yang sesuai untuk kebutuhan bisnis spesifik perusahaan dan memahami cara menggunakannya secara efektif.</p>
+                <p class="p2">API adalah solusi tepat guna agar pengembangan website dan aplikasi Anda menjadi lebih mudah, lebih cepat dan lebih baik. Berbagai manfaat, cara kerja, hingga contoh penggunaan API sudah kami paparkan pada artikel di atas. Semoga artikel ini dapat menjadi inspirasi Anda ketika ingin membangun sebuah website dan aplikasi modern dengan performa yang lebih baik sehingga mendatangkan benefit yang lebih baik pula untuk bisnis Anda.</p>
+                <p class="p2">Jika Anda tertarik untuk menggunakan atau membuat API yang sesuai dengan kebutuhan aplikasi atau website bisnis yang sedang Anda kembangkan, silakan berkonsultasi dengan Tim kami dan temukan solusi paling cocok untuk kebutuhan bisnis Anda. Klik di sini untuk berkonsultasi lebih lanjut dengan kami.</p>
+             </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <div class="footer-office">
+            <div class="footer-img">
+              <img src="../img/logo-gta.png" alt="">
+            </div>
+            <div class="office-addres">
+              <h3>Kantor Kami</h3>
+              <p><i class="fa-solid fa-location-dot"></i> Jl. Ahmad Wahid No.172B, Mantup, Baturetno, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55197 </p>
+            </div>
+            <ul class="office-sosmed">
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-list">
+            <div class="footer-support">
+              <h3>Jam Kerja</h3>
+              <ul>
+                <li><a href="#">Senin-Jumat</a></li>
+                <li><a href="#">08.00-17.00</a></li>
+                <li><a href="#">Sabtu-Minggu</a></li>
+                <li><a href="#">On Call</a></li>
+              </ul>
+            </div>
+            <div class="footer-program">
+              <h3>Program GTA</h3>
+              <ul>
+                <li><a href="bootcamp.html">Bootcamp</a></li>
+                <li><a href="serti.html">Program</a></li>
+                <li><a href="reguler.html">Kelas Reguler</a></li>
+                <li><a href="magang.html">Pemagangan</a></li>
+              </ul>
+            </div>
+            <div class="footer-contact">
+              <h3>Hubungi Kami</h3>
+              <ul>
+                <li><p></p><a href="tel:+6289675009600"><i class="fa-solid fa-phone"></i> +628 9675 0096 00</a></li>
+                <li><p><a href="mailto:gtaproid@gmail.com"><i class="fa-solid fa-envelope"></i> gtapro@gmail.com</a></p></li>
+                <li><p><a href="https://www.instagram.com/gtapro.id"><i class="fa-brands fa-instagram"></i> gtapro.id</a></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>© 2024 Genesis Talent Academy</p>
+    </div>
+  </body>
+  <script>
+    feather.replace();
+    //navbar
+    var navBar = document.getElementById('navBar');
+    window.onscroll= function() {
+      if(window.scrollY > 22) {
+        navBar.classList.add('scrolled');
+      }else{
+        navBar.classList.remove('scrolled');
+      }
+    };
+  </script>
+  <script>
+    // dropdown
+    function dropDown() {
+        var x = document.getElementById("dropdown-menu");
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    document.addEventListener("click", function(event) {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.style.display === "block") {
+        if (!dropdownMenu.contains(event.target) && !event.target.closest('.programgta')) {
+            dropdownMenu.style.display = "none";
+            }
+        }
+    });
+</script>
+<script>
+  // responsive navbar
+  const navbarNav = document.querySelector(".navbar-nav");
+  document.querySelector("#hamburger-menu").onclick = () => {
+    navbarNav.classList.toggle("active");
+  };
+  const hamburger = document.querySelector("#hamburger-menu");
+
+  document.addEventListener("click", function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  });
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

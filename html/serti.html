@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genesis Talent Academy</title>
+    <link rel="stylesheet" href="../css/serti.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar" id="navBar">
+      <div class="navbar-container">
+        <div class="menu-bar">
+          <a href="#"><img class="logo" src="../img/logo-gta.png" alt="" /></a>
+          <ul class="navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="programgta">
+              <button onclick="dropDown()">Program <i class="fa-solid fa-angle-down"></i></a>
+              <div class="dropdown-menu" id="dropdown-menu">
+                <ul>
+                  <li> 
+                    <a href="bootcamp.html"><i class="fa-solid fa-window-maximize"></i> Bootcamp</a>
+                  </li>
+                  <li> 
+                    <a class="nav-active" href="#"><i class="fa-solid fa-window-maximize"></i> Sertifikasi</a>
+                  </li>
+                  <li>
+                    <a href="reguler.html"><i class="fa-solid fa-window-maximize"></i> Kelas Reguler</a>
+                  </li>
+                  <li>
+                    <a href="magang.html"><i class="fa-solid fa-window-maximize"></i> Pemagangan</a> 
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="gal"><a href="galeri.html">Galeri</a></li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="contact.html">Kontak Kami</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-extra">
+          <a id="hamburger-menu"><i class="fa-solid fa-bars"></i></a>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <div class="hero-container">
+        <div class="hero-img">
+          <img src="../img/hero-serti.png" alt="">
+        </div>
+        <div class="hero-text">
+          <h1>Raih Sertifikasi <span>Profesional</span> Yang Akan Membuka Lebih Banyak Peluang!</h1>
+          <div class="hero-text-box">
+            <p><i class="fa-solid fa-restroom"></i> LIVE Interactive Class</p>
+            <p><i class="fa-solid fa-house-signal"></i> Online / Offline</p>
+            <p><i class="fa-solid fa-face-smile"></i> Cocok untuk Pemula</p>
+          </div>
+          <p>Gabung di kursus sertifikasi kami untuk mengasah keterampilan Anda dan mendapatkan pengakuan resmi dalam bidang Anda. </p>
+        </div>
+      </div>
+    </section>
+     <!-- wa -->
+     <a href="https://wa.me/6281228430523" class="floating" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!--why-->
+  <section class="serti-why" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="serti-container">
+      <div class="serti-judul">
+        <h3>Kenapa <span>Perlu</span> Ambil <span>Sertifikasi</span> Profesional</h3>
+      </div>
+      <div class="serti-box">
+        <div class="serti-card">
+          <li>
+            <span><i class="fa-solid fa-chart-line"></i></span>
+            <p>
+              <span>Skills Makin Kredibel</span><br />
+              Makin pede unjuk skills di CV pakai sertifikat internasional
+            </p>
+          </li>
+        </div>
+        <div class="serti-card">
+          <li>
+            <span><i class="fa-solid fa-hand-holding-dollar"></i></span>
+            <p>
+              <span>Karir & Gaji Meningkat</span><br />
+              Semakin ahli, semakin jadi incaran beragam perusahaan
+            </p>
+          </li>
+        </div>
+        <div class="serti-card">
+          <li>
+            <span><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+            <p>
+              <span>Makin Ahli di Bidangnya</span><br />
+              Jadi profesional di bidangnya dengan sertifikasi internasional
+            </p>
+          </li>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!--class sertificasi-->
+  <section class="serti tabcontent" id="serti" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="serti-container">
+      <div class="serti-judul">
+        <h3><span>Mulai Jadi</span> Spesialis Dengan <span>Paket Sertifikasi</span></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam ipsam alias voluptatum!</p>
+      </div>
+      <div class="serti-box">
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi UI/UX Design</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Desainer Grafis</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Frontend Engineer</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Backend Engineer</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Backend Engineer</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Backend Engineer</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Backend Engineer</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+        <div class="serti-card">
+          <div class="serti-img">
+            <img src="../img/serti.png" alt="">
+          </div>
+          <div class="box-text">
+            <h4>Sertifikasi Backend Engineer</h4>
+          <div class="serti-text">
+            <div class="text-pro">
+              <p><i class="fa-solid fa-graduation-cap"></i> 7 Paket</p>
+            </div>
+            <div class="text-detail">
+              <a href="#"> <p>Lihat Detail  <i class="fa-solid fa-arrow-right"></i></p></a>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cls-lebih-banyak">
+    <button onclick="banyak()">Lihat Lebih Banyak</button>
+  </div> 
+  <!--testi-->
+  <section class="testi" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="testi-container">
+      <div class="testi-judul" >
+        <h3><span>Cerita Sukses</span> Alumni Genesis <span>Talent Academy</span> Sertifikasi</h3>
+        <p>Mereka sudah merasakan serunnya belajar skill digital dan meraih karier yang mereka inginkan. Kamu selanjutnya?</p>
+      </div>
+      <div class="testi-box">
+        <div class="testi-card">
+          <div class="testi-text">
+            <div class="coment">
+              <i class="fa-solid fa-quote-left"></i>
+             </div>
+            <p>Belajar di Gta sangat menambah wawasan dan menyenangkan. Bertemu dengan facil yang insightful dan komunikatif membuat kelas menjadi hidup dan interaktif. Saat ini saya berkeinginan untuk switch career menjadi PM dan belajar di Gta adalah salah satu jalan untuk mencapai hal tersebut.</p>
+          </div>
+          <div class="testi-info">
+            <img src="../img/testi4.jpg" alt="">
+            <p><span>Matheus Rendy</span> <br>Desainer Grafis<b> Bank BCA</b></p>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-text">
+            <div class="coment">
+              <i class="fa-solid fa-quote-left"></i>
+             </div>
+            <p>Setelah lulus dari Sertifikasi GTA, selain dapat ilmu tentang konsep dasar & advanced mengenai QA Engineer, aku jadi lebih aware sama product yang aku kembangkan sekarang ini. Berhubung di kantor banyak aplikasi yang lagi dikerjakan, ilmu dari GTA ini sangat terpakai!</p>
+          </div>
+          <div class="testi-info">
+            <img src="../img/testi5.jpg" alt="">
+            <p><span>Justin Beynard</span> <br>System Analyst di <b>PT ASDF Indonesia</b></p>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-text">
+            <div class="coment">
+              <i class="fa-solid fa-quote-left"></i>
+             </div>
+            <p>Kalau bicara soal kesan selama Sertifikasi di Gta ga akan ada habisnya. Bekal hardskill dan softskill yang aku dapet di Sertifikasi menjadi salah satu alasan aku bisa diterima sebagai Software Engineer di salah satu perusahaan retail terbesar di Indonesia dan mampu melakukan kerjaan dengan sangat baik.
+            </p>
+          </div>
+          <div class="testi-info">
+            <img src="../img/testi6.jpg" alt="">
+            <p><span>Georgia Princes</span> <br>UI/UX Desainer di <b>Indomaret Group</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- tahap -->
+  <section class="tahap" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="tahap-container">
+      <div class="tahap-judul">
+        <h3>3 Tahapan <span>Untuk Dapetin</span> Sertifikat Kamu</h3>
+      </div>
+      <div class="tahap-box">
+        <div class="tahap-card">
+          <div class="tahap-icon">
+            <i class="fa-solid fa-chalkboard"></i>
+          </div>
+          <div class="tahap-text">
+            <ol>
+              <li><span>1. Belajar Dan Berlatih</span><br>Gunakan modul belajar dan latihan pre-test yang kamu dapatkan setiap hari untuk meningkatkan kemampuanmu</li>
+            </ol>
+          </div>
+        </div>
+        <div class="tahap-card">
+          <div class="tahap-icon">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="tahap-text">
+            <ol>
+              <li><span>2. Ikuti Ujian</span><br>Setelah merasa siap, jadwalkan ujianmu segera. Bisa dimanapun dan kapanpun tapi dengan device yang mendukung</li>
+            </ol>
+          </div>
+        </div>
+        <div class="tahap-card">
+          <div class="tahap-icon">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div class="tahap-text">
+            <ol>
+              <li><span>3. Dapatkan Sertifikat</span><br>Setelah berhasil lulus, kamu akan mendapatkan sertifikat dan tambahkan ke profil LinkedInmu untuk tingkatin nilai dirimu</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- mentor -->
+   <section class="mentor" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <div class="mentor-container">
+      <div class="mentor-judul">
+        <h2>Dibimbing Oleh <span>Mentor Berpengalaman</span></h2>
+        </p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="mentor-img">
+              <img src="../img/mentor1.jpg" alt="">
+              <h4>Ilham Kurnia Syuriadi</h4>
+            </div>
+            <div class="mentor-text">
+              <p>Software Engineer<br>Tokopedia</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mentor-img">
+              <img src="../img/mentor2.jpg" alt="">
+              <h4>Ilham Kurnia Syuriadi</h4>
+            </div>
+            <div class="mentor-text">
+              <p>Lead QA Engineer <br>Bobobox</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mentor-img">
+              <img src="../img/mentor3.jpg" alt="">
+              <h4>Ilham Kurnia Syuriadi</h4>
+            </div>
+            <div class="mentor-text">
+              <p>UI/UX Designer <br>Bibit</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="mentor-img">
+              <img src="../img/mentor4.jpg" alt="">
+              <h4>Ilham Kurnia Syuriadi</h4>
+            </div>
+            <div class="mentor-text">
+              <p>Product Designer <br>Tokopedia</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+   </section>
+   <!-- faq -->
+   <h2 class="faq-heading">Pertanyaan Seputar <span>GTA Sertifikasi</span></h2>
+    <div class="faq-container"></div>
+  <!--footer-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-box">
+        <div class="footer-office">
+          <div class="footer-img">
+            <img src="../img/logo-gta.png" alt="">
+          </div>
+          <div class="office-addres">
+            <h3>Kantor Kami</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Jl. Ahmad Wahid No.172B, Mantup, Baturetno, Kec. Banguntapan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55197 </p>
+          </div>
+          <ul class="office-sosmed">
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <div class="footer-support">
+            <h3>Jam Kerja</h3>
+            <ul>
+              <li><p>Senin-Jumat</p></li>
+              <li><p>08.00-17.00</p></li>
+              <li><p>Sabtu-Minggu</p></li>
+              <li><p>On Call</p></li>
+            </ul>
+          </div>
+          <div class="footer-program">
+            <h3>Program GTA</h3>
+            <ul>
+              <li><a href="bootcamp.html">Bootcamp</a></li>
+              <li><a href="serti.html">Program</a></li>
+              <li><a href="reguler.html">Kelas Reguler</a></li>
+              <li><a href="magang.html">Pemagangan</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <ul>
+              <li><p></p><a href="tel:+6289675009600"><i class="fa-solid fa-phone"></i> +628 9675 0096 00</a></li>
+              <li><p><a href="mailto:gtaproid@gmail.com"><i class="fa-solid fa-envelope"></i> gtaproid@gmail.com</a></p></li>
+              <li><p><a href="https://www.instagram.com/gtapro.id"><i class="fa-brands fa-instagram"></i> gtapro.id</a></p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="copyright">
+    <p>© 2024 Genesis Talent Academy</p>
+  </div>
+  </body>
+  <script>
+    feather.replace();
+    //navbar
+    var navBar = document.getElementById('navBar');
+    window.onscroll= function() {
+      if(window.scrollY > 22) {
+        navBar.classList.add('scrolled');
+      }else{
+        navBar.classList.remove('scrolled');
+      }
+    };
+  </script>
+  <script>
+    // dropdown
+    function dropDown() {
+        var x = document.getElementById("dropdown-menu");
+        if (x.style.display === "none" || x.style.display === "") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    document.addEventListener("click", function(event) {
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    if (dropdownMenu.style.display === "block") {
+        if (!dropdownMenu.contains(event.target) && !event.target.closest('.programgta')) {
+            dropdownMenu.style.display = "none";
+            }
+        }
+    });
+</script>
+<script>
+  // responsive navbar
+  const navbarNav = document.querySelector(".navbar-nav");
+  document.querySelector("#hamburger-menu").onclick = () => {
+    navbarNav.classList.toggle("active");
+  };
+  const hamburger = document.querySelector("#hamburger-menu");
+
+  document.addEventListener("click", function (e) {
+    if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+      navbarNav.classList.remove("active");
+    }
+  });
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script>
+    // class modal
+    var modal = document.getElementById("modalContent");
+    var btn = document.getElementById("btnModal");
+
+    btn.onclick = function() {
+    modal.style.display = "block";
+    btn.style.display = "none";
+    modal.style.margin = "20px 0 0 0";
+    }
+    </script>
+    <script>
+      // class
+      function banyak() {
+        var content = document.querySelector('.serti');
+        content.classList.toggle('show-more');
+        var button = document.querySelector('.cls-lebih-banyak button');
+        if (content.classList.contains('show-more')) {
+          button.textContent = 'Lihat Lebih Sedikit';
+        } else {
+          button.textContent = 'Lihat Lebih Banyak';
+        }
+      }
+    </script>
+    <script>
+      // faq
+      const FAQData = [
+        {
+          question: "Apa itu Program Sertifikasi Genesis Talent Academy?",
+          answer: [
+            "Program Sertifikasi Genesis Talent Academy adalah inisiatif untuk memberikan pelatihan dan sertifikasi dalam berbagai bidang keterampilan profesional, termasuk teknologi, manajemen, dan bisnis, untuk membantu peserta meningkatkan kredibilitas dan daya saing di pasar kerja.",
+          ],
+        },
+        {
+          question: "Siapa yang bisa mengikuti program sertifikasi ini?",
+          answer: [
+            "Program ini terbuka untuk siapa saja, baik pemula maupun profesional berpengalaman, yang ingin meningkatkan keterampilan dan mendapatkan sertifikat resmi untuk mendukung karir mereka.",
+          ],
+        },
+        {
+          question: "Berapa lama durasi program sertifikasi?",
+          answer: [
+            "Durasi program sertifikasi bervariasi tergantung pada bidang yang dipilih, biasanya berkisar antara 4 hingga 12 minggu. Setiap program dirancang untuk memberikan pengalaman belajar yang mendalam dan praktis.",
+          ],
+        },
+        {
+          question: "Apakah ada syarat khusus untuk mendaftar? ",
+          answer: [
+            "Tidak ada syarat khusus untuk mendaftar, namun beberapa program mungkin lebih cocok untuk peserta dengan latar belakang tertentu. Pastikan untuk membaca deskripsi program untuk informasi lebih lanjut.",
+          ],
+        },
+        {
+          question: " Bagaimana materi ajar disampaikan?",
+          answer: [
+            "Materi ajar disampaikan melalui kombinasi pembelajaran online dan tatap muka, dengan metode pengajaran yang interaktif dan praktis. Kami juga menyediakan akses ke sumber daya tambahan dan forum diskusi.",
+          ],
+        },
+        {
+          question: " Apakah peserta mendapatkan sertifikat setelah menyelesaikan program?",
+          answer: [
+            "Ya, peserta yang berhasil menyelesaikan semua persyaratan program akan menerima sertifikat resmi yang diakui oleh industri.",
+          ],
+        },
+        {
+          question: "Bagaimana cara mendaftar untuk program sertifikasi?",
+          answer: [
+            "Anda dapat mendaftar melalui situs web kami dengan mengisi formulir pendaftaran dan memilih program sertifikasi yang ingin diikuti. Pastikan untuk mengikuti petunjuk yang diberikan.",
+          ],
+        },
+        {
+          question: "Apakah ada biaya pendaftaran?",
+          answer: [
+            "Ya, terdapat biaya pendaftaran yang bervariasi tergantung pada program sertifikasi. Informasi lebih lanjut mengenai biaya dan metode pembayaran dapat ditemukan di situs web kami.",
+          ],
+        },
+        {
+          question: " Apakah ada dukungan karir setelah menyelesaikan program?",
+          answer: [
+            " Kami menyediakan dukungan karir melalui workshop penulisan CV, simulasi wawancara, dan akses ke peluang kerja di berbagai perusahaan yang bekerja sama dengan kami.",
+          ],
+        },
+      ];
+      
+      const FAQContainer = document.querySelector(".faq-container");
+      
+      const removeAllExpanded = () => {
+        const questionContainers = document.querySelectorAll(
+          ".faq-container .question-container"
+        );
+      
+        questionContainers.forEach((q) => {
+          q.classList.remove("expanded");
+          const answerContainer = q.querySelector(".answer-container");
+          answerContainer.style.maxHeight = "0";
+        });
+      };
+      
+      const displayFAQ = () => {
+        FAQData.forEach((q) => {
+          const answerHTML = q.answer
+            .map(
+              (a) => `<div class="answer">
+              <span class="answer-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  class="w-5 h-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </span>
+              ${a}
+            </div>`
+            )
+            .join("");
+      
+          const html = `<div class="question">
+                ${q.question}
+                <span class="question-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </span>
+              </div>
+      
+              <div class="answer-container">
+                ${answerHTML}
+              </div>`;
+      
+          const questionContainer = document.createElement("div");
+          questionContainer.classList.add("question-container");
+          questionContainer.innerHTML = html;
+      
+          FAQContainer.appendChild(questionContainer);
+      
+          const question = questionContainer.querySelector(".question");
+      
+          question.addEventListener("click", () => {
+            if (!questionContainer.classList.contains("expanded")) {
+              removeAllExpanded();
+            }
+      
+            questionContainer.classList.toggle("expanded");
+            const isExpanded = questionContainer.classList.contains("expanded");
+      
+            const answerContainer =
+              questionContainer.querySelector(".answer-container");
+            const contentHeight = answerContainer.scrollHeight;
+            answerContainer.style.maxHeight = isExpanded ? `${contentHeight}px` : "0";
+          });
+        });
+      };
+      
+      displayFAQ();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        // tim
+        var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+      </script>
+</html>
